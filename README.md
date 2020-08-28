@@ -31,7 +31,7 @@
     WantedBy=multi-user.target
 
     ```
-    note: silahkan disesuaikan workingDirectory, Environment (virtualenv kamu dimana), dan pake gunicorn
+    note: silahkan disesuaikan workingDirectory, Environment (virtualenv kamu dimana), dan pake gunicorn.
     oh ya, jangan lupa install gunicorn, pip3 install gunicorn. --workers=4 aja, --bind 0.0.0.0:5000 port nya disesuaikan aja
     note lagi:
     kalo kamu pake wsgi.py, berarti nanti gini, --bind 0.0.0.0:5000 wsgi:app
@@ -43,6 +43,9 @@
         ```
     
     tapi gak pun gamasalah
+    
+    Note lagi:
+    - nama User=... disesuaikan dengan nama user diperangkat kamu ya, diterminal kan ada `user@perangkat $`
 
 5. Ohya diatas itu khusus flask, pake gunicorn, kalo cmn file biasa dan bkn flask gini
     ```
